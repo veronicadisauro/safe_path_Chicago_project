@@ -1,25 +1,63 @@
-1. SafePath
- Descrizione: AI per generare percorsi sicuri per donne e minori in città ad alto rischio.
- Dataset: OpenStreetMap, UN Crime Data, SafeCity India
- Obiettivi ONU: 5, 11, 16
- Zone target: Sud America, India, Sudafrica
- Partner: ONU Donne, NGO locali
- Tecnologie: Python, Graph Neural Networks, Mapbox
- Fasi: raccolta dati, GNN, mappa interattiva
- Timeline: 4 mesi
- KPI: copertura 80%, feedback positivo >75%
- Impatto: sicurezza urbana in aree vulnerabili
+SafePath
+SafePath è un sistema basato su Intelligenza Artificiale progettato per generare percorsi pedonali sicuri per donne e minori in città ad alto rischio, con particolare attenzione a zone vulnerabili in Sud America, India e Sudafrica.
 
-Poiché i dataset urbani non contengono etichette di rischio per ogni segmento stradale, 
-ho utilizzato una forma di etichettatura debole basata sulla densità di crimini localizzati, 
-definendo proxy di rischio e permettendo al modello GNN di propagare queste informazioni sulla rete pedonale.
+🌍 Obiettivi
+ONU SDG Goals:
 
- Nella cartella code: 
- -codice per l'individuazione di un percorso sicuro da un indirizzo di origine a uno destinazione.
+Goal 5: Parità di genere
 
- Nella cartella data:
- -csv del dataset originale con i crimini
- -csv ripulito con i crimini, e dati normalizzati. 
+Goal 11: Città e comunità sostenibili
 
- Nella cartella images:
- i risultati a video dell'implementazione
+Goal 16: Pace, giustizia e istituzioni solide
+
+Impatto atteso: Miglioramento della sicurezza urbana in aree vulnerabili attraverso percorsi pedonali ottimizzati.
+
+📊 Dataset utilizzati
+OpenStreetMap
+
+UN Crime Data
+
+SafeCity India
+
+🧠 Approccio Tecnico
+Poiché i dataset urbani non contengono etichette esplicite di rischio per ciascun segmento stradale, è stata adottata una strategia di etichettatura debole basata sulla densità di crimini localizzati.
+Sono stati definiti proxy di rischio che il modello GNN (Graph Neural Network) utilizza per propagare le informazioni attraverso la rete pedonale.
+
+Tecnologie
+Python
+
+Graph Neural Networks (GNN)
+
+Mapbox per la visualizzazione interattiva
+
+🚀 Fasi del progetto
+Raccolta e pulizia dei dati
+
+Addestramento GNN su rete stradale e crimini
+
+Generazione di mappa interattiva con percorsi sicuri
+
+
+
+📦 Struttura del repository
+
+├── code/         # Codice per il calcolo dei percorsi sicuri
+├── data/
+│   ├── crimes_raw.csv       # Dataset originale con i crimini
+│   ├── crimes_cleaned.csv   # Dataset pulito e normalizzato
+├── images/       # Risultati visivi e schermate dell’implementazione
+└── README.md     # Descrizione del progetto
+
+
+
+📈 KPI (Key Performance Indicators)
+Copertura geografica percorsi: ≥ 80% delle aree urbane target
+
+Feedback positivo da utenti e stakeholder locali: > 75%
+
+🤝 Partner
+ONU Donne
+
+ONG locali nei paesi target
+
+
