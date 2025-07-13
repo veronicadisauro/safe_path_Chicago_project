@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/veron/AppData/Local/Temp/ae177e5e-271b-47aa-89c9-91985dad56b9_trace_span_hierarchy.zip.6b9",
+      "program": "c:/Users/veron/AppData/Local/Temp/ae177e5e-271b-47aa-89c9-91985dad56b9_trace_span_hierarchy.zip.6b9/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
