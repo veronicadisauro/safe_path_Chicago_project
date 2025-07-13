@@ -1,41 +1,55 @@
-SafePath
-SafePath è un sistema basato su Intelligenza Artificiale progettato per generare percorsi pedonali sicuri per donne e minori in città ad alto rischio, con particolare attenzione a zone vulnerabili in Sud America, India e Sudafrica.
+# SafePath
 
-🌍 Obiettivi
-ONU SDG Goals:
+**SafePath** is an AI-powered project designed to generate safe walking routes for women and minors in high-risk urban areas, with a focus on South America, India, and South Africa.
 
-Goal 5: Parità di genere
+---
 
-Goal 11: Città e comunità sostenibili
+## 🌍 Purpose
 
-Goal 16: Pace, giustizia e istituzioni solide
+To provide an intelligent and accessible tool that enhances **urban safety** in vulnerable regions, leveraging geospatial data and machine learning.
 
-Impatto atteso: Miglioramento della sicurezza urbana in aree vulnerabili attraverso percorsi pedonali ottimizzati.
+---
 
-📊 Dataset utilizzati
-OpenStreetMap
+## 🎯 Alignment with UN Sustainable Development Goals (SDGs)
 
-UN Crime Data
+- **Goal 5:** Gender Equality  
+- **Goal 11:** Sustainable Cities and Communities  
+- **Goal 16:** Peace, Justice and Strong Institutions
 
-SafeCity India
+---
 
-🧠 Approccio Tecnico
-Poiché i dataset urbani non contengono etichette esplicite di rischio per ciascun segmento stradale, è stata adottata una strategia di etichettatura debole basata sulla densità di crimini localizzati.
-Sono stati definiti proxy di rischio che il modello GNN (Graph Neural Network) utilizza per propagare le informazioni attraverso la rete pedonale.
+## 🧠 Technologies Used
 
-Tecnologie
-Python
+- **Python**
+- **Graph Neural Networks (GNN)**
+- **Mapbox** (interactive visualization)
 
-Graph Neural Networks (GNN)
+---
 
-Mapbox per la visualizzazione interattiva
+## 📊 Main Datasets
 
-🚀 Fasi del progetto
-Raccolta e pulizia dei dati
+- **OpenStreetMap** (urban structure and street network)  
+- **UN Crime Data** (global crime statistics)  
+- **Chicago Crime Data** (crime reports)
 
-Addestramento GNN su rete stradale e crimini
+---
 
-Generazione di mappa interattiva con percorsi sicuri
+## 🔎 Technical Approach
+
+Since urban datasets do not include explicit risk labels for each street segment, we implemented a **weak labeling strategy** based on the **spatial density of localized crimes**, using this as a risk proxy.  
+These signals are then propagated across the pedestrian network using a **Graph Neural Network (GNN)**, enabling the model to infer risk even in areas with sparse data.
+
+---
+
+## 🗺️ Output
+
+- **Safe route suggestions** between user-defined points  
+- **Interactive map visualization**  
+- **Dynamic street-level safety scoring**
+
+---
+
+## 📁 Repository Structure
 
 
 
@@ -50,14 +64,37 @@ Generazione di mappa interattiva con percorsi sicuri
 
 
 
-📈 KPI (Key Performance Indicators)
-Copertura geografica percorsi: ≥ 80% delle aree urbane target
+---
 
-Feedback positivo da utenti e stakeholder locali: > 75%
+## 🕒 Project Timeline (4 months)
 
-🤝 Partner
-ONU Donne
+1. **Data collection and cleaning**  
+2. **Urban network construction and weak labeling**  
+3. **GNN model training**  
+4. **Deployment of interactive map**
 
-ONG locali nei paesi target
+---
+
+## 📌 Success Metrics (KPIs)
+
+- **Coverage** of target zones ≥ **80%**  
+- **Positive user feedback** ≥ **75%**
+
+---
+
+## 🤝 Partners & Collaborations
+
+- **UN Women**  
+- **Local NGOs**
+
+---
+
+## 💡 Expected Impact
+
+Reducing risk exposure for women and minors during urban travel, while promoting inclusive and safe access to public spaces.
+
+---
+
+For questions or collaboration proposals, feel free to contact us or open an issue in the repository.
 
 
