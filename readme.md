@@ -82,13 +82,6 @@ These signals are then propagated across the pedestrian network using a **Graph 
 
 ---
 
-## 🤝 Partners & Collaborations
-
-- **UN Women**  
-- **Local NGOs**
-
----
-
 ## 💡 Expected Impact
 
 Reducing risk exposure for women and minors during urban travel, while promoting inclusive and safe access to public spaces.
